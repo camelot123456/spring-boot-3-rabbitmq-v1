@@ -9,7 +9,7 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 public class RabbitMQConsumer {
   
-  @RabbitListener(queues = "${rabbitmq.queue.name}")
+  @RabbitListener(queues = "${rabbitmq.queue-1.name}")
   public void consumeMessage(String message) {
     log.info("Message received from RabbitMQ: {}", message);
   }

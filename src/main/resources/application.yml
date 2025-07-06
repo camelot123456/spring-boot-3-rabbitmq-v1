@@ -11,8 +11,13 @@ spring:
     password: admin
 
 rabbitmq:
-  queue:
+  queue-1:
     name: demo-queue
+  queue-2:
+    name: demo-json-queue
   exchange:
     name: demo-exchange
-  routing-key: demo-routing-key
+  routing-1:
+    key: demo-routing-key
+  routing-2:
+    key: demo-json-routing-key
